@@ -1,80 +1,24 @@
-## Figma URL
+## Contentful CMS (React)
 
-[Contentful](https://www.figma.com/file/XtVr3JRCGWyZESYxd9EhZK/Contentful?node-id=0%3A1&t=SNnU6FgNUQXktIFb-1)
+This small React project was build for practicing data fetching from the Contentful (headless) CMS. All content is mocked.
 
-## Steps
+Showcasing: Data fetching and parsing from SDK, custom hooks, environment variables, data mapping.
 
-#### Install and Setup
+### Live Demo
 
-- npm install
-- npm run dev
+🚀 [Deployed App](https://tourmaline-marzipan-9883e7.netlify.app/)
 
-#### Structure
+#### 🛠️ Build with
 
-Create Hero and Projects components
+- React
+- CSS
+- Contentful
+- Vite
 
-#### Hero
+#### 💻 Run this project
 
-Setup Hero component.
-
-#### Nice Images
-
-[Undraw](https://undraw.co/)
-
-#### Data
-
-Explore data.js
-
-#### Headless CMS
-
-A headless CMS is a back-end only content management system that provides content creators with an intuitive interface for creating and managing content, while leaving the front-end presentation layer to be handled by a separate system or platform. This approach allows for greater flexibility and scalability, as the content can be easily distributed to multiple channels and devices, without being limited by the constraints of a particular front-end system.
-
-#### Contentful
-
-Create a Contentful account
-
-[Contentful ](https://www.contentful.com/)
-
-##### Create Data
-
-Setup content type and create few entries
-
-#### Explore API
-
-Get Space ID, Access Token and explore code examples.
-
-Space ID -
-Access Token -
-
-#### Install SDK
-
-- npm install contentful
-
-#### Get Entries
-
-```js
-import { createClient } from 'contentful';
-
-const client = createClient({
-  space: 'qz00uzgg3leh',
-  environment: 'master', // defaults to 'master' if not set
-  accessToken: import.meta.env.VITE_API_KEY,
-});
-
-client
-  .getEntries({ content_type: 'projects' })
-  .then((response) => console.log(response.items))
-  .catch(console.error);
 ```
-
-#### Custom Hook
-
-Create custom hook with loading and projects state values.
-
-#### Parse Data
-
-Setup projects array
-
-#### Setup Products Component
-
-Render data in Products component
+git clone [repo]
+npm install
+npm run dev
+```
